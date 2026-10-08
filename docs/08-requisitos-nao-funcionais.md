@@ -3,12 +3,15 @@
 ## Confirmado
 
 - O portal deverá funcionar em celular, computador e tablet.
+- O protótipo deverá oferecer uma experiência navegável em largura de celular, representando a futura experiência mobile.
+- O aplicativo mobile separado não faz parte desta etapa.
 - Segurança, privacidade e separação de dados entre vilas são preocupações obrigatórias do levantamento.
-- A escolha de tecnologia e a arquitetura ocorrerão somente após o avanço dos requisitos.
+- React foi escolhido para o front-end.
+- As demais escolhas de tecnologia e a arquitetura definitiva ocorrerão após o avanço dos requisitos.
 
 ## Sugestão
 
-Nenhuma tecnologia, serviço ou arquitetura foi escolhida.
+Backend, banco de dados, serviços externos, hospedagem e arquitetura definitiva ainda não foram escolhidos.
 
 ## Riscos
 
@@ -28,4 +31,4 @@ Nenhuma tecnologia, serviço ou arquitetura foi escolhida.
 - Disponibilidade e recuperação de falhas.
 - Controle e expiração de sessão.
 - Requisitos de hospedagem e operação.
-- Arquitetura e tecnologias, somente após os requisitos necessários.
+- Arquitetura e tecnologias restantes, somente após os requisitos necessários.

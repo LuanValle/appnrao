@@ -2,16 +2,18 @@
 
 Documentação do levantamento de requisitos para um portal único da Vila Buriti e da Vila Humaitá.
 
-O projeto está na fase de descoberta. Os documentos registram decisões, riscos e pontos pendentes; ainda não definem tecnologias nem representam uma solução final.
+O levantamento de requisitos continua documentado, e a primeira etapa visual do front-end já está em construção com React. Backend, banco de dados, hospedagem e arquitetura definitiva permanecem em aberto.
 
 ## Documentação
 
 - [Índice do levantamento](docs/README.md)
+- [Plano de construção do site](docs/09-plano-construcao-site.md)
+- [Protótipo do front-end](docs/10-prototipo-front-end.md)
 - [Histórico de decisões](docs/historico-decisoes.md)
 
 ## Situação atual
 
-O levantamento está no módulo de reserva de churrasqueiras. A próxima definição necessária é a quantidade de churrasqueiras existente em cada vila.
+O módulo de reserva de churrasqueiras está suspenso temporariamente. O protótipo atual prioriza a experiência pública, a área simulada do morador, a árvore familiar/cadastral do PNR e as correspondências, com interface responsiva para futura experiência mobile.
 
 ## Publicação
 

@@ -8,6 +8,8 @@
 - Estará vinculado a uma vila e a uma residência.
 - Poderá consultar correspondências, dependentes e reservas.
 - Receberá notificações.
+- Poderá cadastrar e atualizar integrantes do núcleo familiar vinculados ao próprio PNR.
+- Poderá visualizar a composição familiar em uma árvore ou hierarquia cadastral.
 
 ### Dependente
 
@@ -15,6 +17,14 @@
 - Estará vinculado ao proprietário.
 - Suas correspondências serão comunicadas ao proprietário.
 - Não receberá mensagens de WhatsApp diretamente.
+- Será representado na árvore cadastral do PNR pelo titular ou por administrador autorizado.
+
+### Integrante do núcleo familiar
+
+- Poderá ser filho, cônjuge ou outro integrante informado pelo titular.
+- Não terá login no protótipo inicial.
+- Poderá ser destinatário de correspondência quando estiver cadastrado no PNR.
+- O cadastro não deverá exigir CPF, documento ou dado sensível no protótipo.
 
 ### Administrador da vila
 
@@ -51,3 +61,4 @@ Nenhuma sugestão aprovada. O autocadastro permanece apenas como possibilidade a
 - Definir autenticação em dois fatores.
 - Definir bloqueios, tentativas de acesso e controle de sessão.
 - Detalhar todas as permissões de cada perfil.
+- Definir quais integrantes poderão ser dependentes oficiais e quais poderão receber acesso próprio no futuro.

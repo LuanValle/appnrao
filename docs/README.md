@@ -14,14 +14,19 @@ Manter o histórico verificável do levantamento de requisitos do portal da Asso
 6. [Conteúdo institucional](06-conteudo-institucional.md)
 7. [Auditoria](07-auditoria.md)
 8. [Requisitos não funcionais](08-requisitos-nao-funcionais.md)
-9. [Histórico de decisões](historico-decisoes.md)
+9. [Plano de construção do site](09-plano-construcao-site.md)
+10. [Protótipo do front-end](10-prototipo-front-end.md)
+11. [Histórico de decisões](historico-decisoes.md)
 
 ## Estado do levantamento
 
-- **Fase:** descoberta e levantamento de requisitos.
-- **Módulo atual:** reservas de churrasqueiras.
-- **Próximo ponto:** quantidade de churrasqueiras na Vila Buriti e na Vila Humaitá.
-- **Fora da fase atual:** escolha de tecnologia, arquitetura definitiva e desenvolvimento.
+- **Fase:** descoberta pausada e início da construção do front-end.
+- **Módulo atual:** protótipo público, área do morador, árvore familiar/cadastral e correspondências.
+- **Módulo suspenso:** reservas de churrasqueiras e pagamento Pix associado.
+- **Estado visual:** primeira versão da página inicial aprovada.
+- **Próximo ponto:** validar os fluxos do protótipo com a Associação.
+- **Decisão técnica parcial:** React foi escolhido para o front-end.
+- **Fora da fase atual:** backend, banco de dados, integrações, hospedagem e arquitetura definitiva.
 
 ## Convenções
 
