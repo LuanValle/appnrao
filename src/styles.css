@@ -1172,11 +1172,11 @@ h2 {
 /* Minimal institutional visual system */
 :root {
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  color: #20313d;
-  background: #f5f8fa;
-  --blue: #126fa9;
-  --blue-deep: #0d4f7b;
-  --ink: #20313d;
+  color: #172f43;
+  background: #f4f7f9;
+  --blue: #1a5f8a;
+  --blue-deep: #0b304c;
+  --ink: #172f43;
   --muted: #667985;
   --surface: #ffffff;
   --surface-soft: #f5f8fa;
@@ -1186,7 +1186,7 @@ h2 {
 }
 
 body {
-  background: #f5f8fa;
+  background: #f4f7f9;
   color: var(--ink);
 }
 
@@ -1238,6 +1238,26 @@ select {
   color: var(--blue-deep);
   font-size: 22px;
   font-weight: 850;
+  letter-spacing: .08em;
+}
+
+.brand-lockup {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.brand-lockup img {
+  width: 43px;
+  height: 43px;
+  border: 2px solid #d9b35a;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  box-shadow: 0 3px 10px rgba(11, 48, 76, .18);
+}
+
+.brand-lockup span {
   letter-spacing: .08em;
 }
 
@@ -1394,7 +1414,22 @@ h2 {
 }
 
 .footer {
-  background: #132b3b;
+  background: #0b263d;
+}
+
+.brand-lockup--footer {
+  color: #ffffff;
+}
+
+.brand-lockup--footer img {
+  width: 56px;
+  height: 56px;
+  border-color: #c9a34f;
+}
+
+.brand-lockup--footer span {
+  font-size: 25px;
+  font-weight: 850;
 }
 
 .footer button {
@@ -1440,6 +1475,19 @@ h2 {
 }
 
 /* Professional institutional pass */
+.hero-logo {
+  display: block;
+  width: 94px;
+  height: 94px;
+  margin-bottom: 20px;
+  border: 3px solid #e8c56b;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  box-shadow: 0 9px 30px rgba(0, 0, 0, .24);
+  animation: logo-float 5s ease-in-out infinite;
+}
+
 .hero-video__content > small {
   display: block;
   margin-bottom: 18px;
@@ -1764,6 +1812,17 @@ h2 {
   .hero-video__content > small {
     margin-bottom: 13px;
     font-size: 10px;
+  }
+
+  .hero-logo {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 14px;
+  }
+
+  .brand-lockup img {
+    width: 36px;
+    height: 36px;
   }
 
   .hero-actions {
@@ -2371,4 +2430,46 @@ h2 {
   .family-node { align-items: flex-start; flex-wrap: wrap; }
   .family-node .status-pill { margin-left: 33px; }
   .node-actions { margin-left: auto; }
+}
+
+@keyframes logo-float {
+  0%, 100% { transform: translateY(0) rotate(-1deg); }
+  50% { transform: translateY(-5px) rotate(1deg); }
+}
+
+@keyframes soft-rise {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .hero-video__content > *:not(video) {
+    animation: soft-rise 700ms both;
+  }
+
+  .hero-video__content > *:nth-child(2) { animation-delay: 80ms; }
+  .hero-video__content > *:nth-child(3) { animation-delay: 150ms; }
+  .hero-video__content > *:nth-child(4) { animation-delay: 220ms; }
+  .hero-video__content > *:nth-child(5) { animation-delay: 290ms; }
+
+  .quick-action,
+  .welcome-card,
+  .image-link-card,
+  .publication-card,
+  .village-page-card {
+    transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease;
+  }
+
+  .quick-action:hover,
+  .welcome-card:hover,
+  .image-link-card:hover,
+  .publication-card:hover,
+  .village-page-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 32px rgba(11, 48, 76, .12);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-logo { animation: none; }
 }
